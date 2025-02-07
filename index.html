@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards con Swiper</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Flashcards de Términos y Conceptos</h1>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Cada tarjeta es un slide -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">¿Qué significa OSI en el modelo de comunicación?</div>
+                        <div class="card-back">OSI significa Open Systems Interconnection (Interconexión de Sistemas Abiertos).</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Respuesta</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">¿Cuántas capas tiene el modelo OSI y cuál es su propósito?</div>
+                        <div class="card-back">Tiene 7 capas y su propósito es estandarizar la comunicación entre dispositivos de red.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Respuesta</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Modelo OSI</div>
+                        <div class="card-back">Marco conceptual que divide las funciones de una red en 7 capas para facilitar la comunicación.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front"> Capa Física</div>
+                        <div class="card-back"> Se encarga de la transmisión de datos en forma de señales eléctricas, ópticas o inalámbricas.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Enlace de Datos</div>
+                        <div class="card-back">Controla el acceso al medio físico y detecta errores en la transmisión de datos.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Red</div>
+                        <div class="card-back">Se encarga del enrutamiento de paquetes y de encontrar la mejor ruta para los datos.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Transporte</div>
+                        <div class="card-back">Garantiza la entrega fiable de los datos entre dispositivos, controlando errores y segmentación.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Sesión</div>
+                        <div class="card-back">Establece, gestiona y finaliza sesiones de comunicación entre aplicaciones en distintos dispositivos.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Presentación</div>
+                        <div class="card-back">Se encarga de la traducción de formatos de datos, encriptación y compresión antes de enviarlos.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Capa de Aplicación</div>
+                        <div class="card-back">Proporciona servicios de red a las aplicaciones como correo electrónico, web y transferencia de archivos.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">TCP (Transmission Control Protocol)</div>
+                        <div class="card-back">Protocolo que garantiza la entrega fiable de los datos con control de errores.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">UDP (User Datagram Protocol)</div>
+                        <div class="card-back">Protocolo de transporte que envía datos rápidamente sin control de errores.</div>
+                    </div>
+                    <button class="btn" onclick="flipCard(this)">Definición </button>
+                </div>
+            </div>
+
+            <!-- Repite el mismo formato para más tarjetas -->
+        </div>
+        <!-- Controles de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+        <h1>Redes de Computadoras</h1>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
